@@ -1,0 +1,57 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: rebeccapurple;
+    transition: background-color 1s, border-radius 2s;
+
+}
+
+.circle:hover {
+    border-radius: 50%;
+    background-color: wheat;
+}
+
+*h1 {
+    background-color: teal;
+    width: 25%;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    transition: background-color 1s ease-in-out, width 1s ease-in-out 1s;
+}
+
+h1:hover {
+    width: 50%;
+    background-color: saddlebrown;
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: olive;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+/* 이 섹션에 마우스를 올리면 모든 div의 왼쪽에 500px씩의 여백이 생기게 함 */
+/* 이후 section div의 설정으로 인해 margin-left에 3초의 transition을 설정 */
+
+*div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.86, 0, 0.15, 1);
+}

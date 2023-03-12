@@ -1,0 +1,19 @@
+h2 {
+    color: teal;
+    background-color: blueviolet;
+}
+
+button {
+    color: rgb(5, 255, 24);
+    background-color: tomato;
+}
+
+p {
+    color: olive;
+    background: #ff0025;
+}
+
+body {
+    background-color: #000;
+    /* background-color: #cc55ee = #c5e */
+}

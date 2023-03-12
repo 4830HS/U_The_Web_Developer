@@ -1,0 +1,60 @@
+section {
+    background-color: darkgreen;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: crimson;
+    width: 50%;
+    height: 50%;
+    /* width와 height의 50%는 부모요소인 section의 50% */
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+    /* font-size를 기준으로 하므로 200% = 80px
+    => but, 자주 쓰이는 방법은 아님 */
+}
+
+h2 {
+    font-size: 2em;
+    margin-left: 1em;
+    /* em의 특성상, 1em은 요소 자체의 정확한 글꼴 크기를 나타냄
+    => 즉, margin-left는 font-size의 요소에 따라 결정됨 font-size는 부모요소인 article의 30px을 기준으로 60px이고 margin-left는 이에 따라 30px로 결정됨 */
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* 부모 요소인 article은 특정한 글꼴 크기 세트가 없음
+=> but, article에 글꼴 크기를 설정하면 h2도 영향을 받음 (60px) */
+
+article {
+    font-size: 15px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: red;
+    color: white;
+}
+
+/* button 또한 article이 부모요소이므로, article의 font-size 기준으로 변동됨 */
+
+ul {
+    font-size: 1.5em;
+}
+
+/* 중첩된 ul 요소와 같은 경우, em의 문제가 여실히 드러남
+    -> 단계별로 누적되어 가장 안쪽의 글꼴이 가장 크게 보여짐
+        => rem이 필요함 */

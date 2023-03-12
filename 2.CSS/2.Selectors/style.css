@@ -1,0 +1,127 @@
+/* * {
+    background-color: royalblue;
+} */
+
+body {
+    background-color: sandybrown;
+}
+
+button {
+    font-size: 30px;
+    background-color: mediumslateblue;
+}
+
+h1,
+h2 {
+    color: darkolivegreen;
+}
+
+#signup {
+    background-color: brown;
+    color: beige;
+}
+
+span {
+    color: #82ff83;
+}
+
+.tag {
+    background-color: indigo;
+    color: papayawhip;
+    font-size: 15px;
+}
+
+/* 1) span에 속한 a만 변경
+span a {
+    color: yellow;
+} */
+
+/* 2) section에 class 걸고 class로 변경 (better) */
+.post a {
+    color: yellow;
+}
+
+footer a {
+    color: red;
+}
+
+input+button {
+    background-color: pink;
+}
+
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+footer>a {
+    color: blue;
+}
+
+input[type="password"] {
+    color: rebeccapurple;
+}
+
+section[class="post"] {
+    /* background-color: blueviolet; */
+}
+
+a[href*="google"] {
+    color: red;
+}
+
+a:hover {
+    text-decoration: blue overline;
+}
+
+/* 딱 세번째 것만 적용시키고 싶다면? */
+.post:nth-of-type(3) {
+    background-color: cadetblue;
+}
+
+/* 매 3번째마다 선택하게 하고 싶다면? */
+.post:nth-of-type(3n) {
+    background-color: cadetblue;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: royalblue;
+}
+
+p::selection {
+    /* background-color: blue; */
+    color: red;
+}
+
+/* 모든 버튼에 hover 적용하는 방법 */
+button:hover {
+    background-color: #82ff83;
+    color: red;
+}
+
+/* 특정 클래스 (post)에 있는 버튼에 hover 적용하는 방법 */
+.post button:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.post button:active {
+    background-color: sienna;
+}
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+
+/* .post button:hover의 background-color와 button:hover의 background-color가 충돌 => .post button이 더 우선적으로 적용 (∵ Specificity)
+but, font-size는 충돌하는 요소가 아니기 때문에 그대로 모두 적용됨 */
+
+/* !important 사용하여 다른 어떤 요소보다 우선화 시키기 */
+/* button {
+    background-color: magenta !important;
+} */

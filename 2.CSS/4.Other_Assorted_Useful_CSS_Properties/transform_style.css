@@ -1,0 +1,65 @@
+h1 {
+    background-color: aqua;
+    border: 5px solid rebeccapurple;
+    color: firebrick;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    /* margin 좌우에 auto를 설정하면 자동으로 중앙에 배치됨 */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: lawngreen;
+}
+
+h1:nth-of-type(3n) {
+    background-color: green;
+}
+
+h1:nth-of-type(4n) {
+    background-color: darkblue;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    /* transform-origin: bottom right; */
+    transform: rotate(45deg);
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    /* transform-origin: bottom right; */
+    /* transform: scale(0.5); */
+    /* transform: scale(2, 1); */
+    transform: scaleY(1.5);
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translateX(200px);
+}
+
+section:first-of-type h1:nth-of-type(4) {
+    transform: translate(-200px, 50px);
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(30deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: skew(10deg, 5deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transform: rotate(20deg) scale(1.3);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transform: translateX(-500px) rotate(0.5turn) scaleY(1.5);
+}
+
+section:nth-of-type(2) {
+    transform: scale(0.7) translateX(500px);
+}

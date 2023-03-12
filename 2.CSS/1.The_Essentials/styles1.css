@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: #f17020 underline wavy;
+    letter-spacing: 10px;
+    font-size: 80px;
+    font-family: fantasy;
+}
+
+/* p {
+    font-weight: bold;
+} */
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+    /* => 줄간격 2배 */
+}

@@ -1,0 +1,18 @@
+body {
+    color: #ffcdb2;
+}
+
+section {
+    color: #ffca3a;
+}
+
+form {
+    color: #adc178;
+}
+
+/* form 내의 button과 input 부분은 상속받지 못함 (∵ 상속이 모든 요소를 포함하는 것은 아님)
+=> 상속받지 못했을 경우의 상속 방법 */
+button,
+input {
+    color: inherit;
+}

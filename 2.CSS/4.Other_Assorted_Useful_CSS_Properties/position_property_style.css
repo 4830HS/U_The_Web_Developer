@@ -1,0 +1,42 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: peru;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: maroon;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+    /* top에 값을 줘도 요소의 위치가 static이면 아무런 영향이 없음 */
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute {
+    position: relative;
+}
+
+/* #absolue를 relative 포지션으로 지정함으로써 기준이 되는 조상 (h2)을 만들어줌 */
+
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+}

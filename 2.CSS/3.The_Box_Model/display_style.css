@@ -1,0 +1,39 @@
+/* h1 {
+    background-color: tan;
+    border: 1px solid red;
+    display: inline;
+}
+
+span {
+    background-color: hotpink;
+    border: 1px solid black;
+    display: block;
+} */
+
+span {
+    background-color: wheat;
+    border: 1px solid black;
+    /* span의 요소가 inline display이기 때문에 너비나 높이는 무시됨 => 아래의 width는 적용되지 않음 */
+    width: 500px;
+    /* 하지만 padding은 적용됨 */
+    padding: 10px;
+    /* margin은 아무리 4면에 적용시켜도 위아래는 무시되고, 양 옆에만 적용됨 */
+    margin: 50px;
+}
+
+h1 {
+    background-color: indianred;
+    border: 1px solid blue;
+    width: 300px;
+    padding: 50px;
+    margin: 100px;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 5px solid red;
+    display: inline-block;
+    margin: 50px;
+}

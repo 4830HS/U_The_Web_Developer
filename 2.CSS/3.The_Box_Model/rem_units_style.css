@@ -1,0 +1,60 @@
+html {
+    font-size: 10px;
+}
+
+#percenages {
+    background-color: wheat;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: saddlebrown;
+    width: 70%;
+    height: 20%;
+}
+
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 15px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: olivedrab;
+    color: white;
+}
+
+/* ul {
+    font-size: 1.5em;
+} */
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
